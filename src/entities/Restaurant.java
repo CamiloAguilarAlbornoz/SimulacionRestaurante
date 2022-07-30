@@ -71,6 +71,7 @@ public class Restaurant {
 		System.out.println("Arroz con Pollo: " + cantOfArroz + "\t Calificación:  " + totalRatingArroz / cantOfArroz);
 		System.out.println();
 		System.out.println("Bandeja: "+netWorthBandeja+ " Cuchuco: " + netWorthCuchuco + " Valencia: "+ netWorthValencia+ " Arroz: " + netWorthArroz);
+		// ================================= Plato Fuerte ===================================================================
 		if(netWorthBandeja > netWorthCuchuco && netWorthBandeja > netWorthValencia && netWorthBandeja > netWorthArroz ) {
 			System.out.println("El plato con mayor utilidad es la Bandeja Paisa con: "+ netWorthBandeja);
 		} else if (netWorthCuchuco >  netWorthValencia && netWorthCuchuco >  netWorthArroz ) {
@@ -81,6 +82,8 @@ public class Restaurant {
 			System.out.println("El plato con mayor utilidad es la Arroz con pollo con: "+ netWorthArroz);
 		}
 		System.out.println();
+		// ================================= Postre mas vendido ===================================================================
+		
 	}
 
 	public void addCalification(Calification calification) {
@@ -89,10 +92,12 @@ public class Restaurant {
 
 	private void addPlates() {
 		listOfPlates = new ArrayList<>();
-		listOfPlates.add(new Plate(0, "Bandeja Paisa", Math.random()));
-		listOfPlates.add(new Plate(1, "Paella a la Valenciana", Math.random()));
-		listOfPlates.add(new Plate(2, "Arroz con Pollo", Math.random()));
-		listOfPlates.add(new Plate(3, "Cuchuco de Trigo con Espinazo", Math.random()));
+		// ================================ Platos ==========================
+		listOfPlates.add(new Plate(0, "Bandeja Paisa", Math.random(), TypePlate.PLATE));
+		listOfPlates.add(new Plate(1, "Paella a la Valenciana", Math.random(),  TypePlate.PLATE));
+		listOfPlates.add(new Plate(2, "Arroz con Pollo", Math.random(),  TypePlate.PLATE));
+		listOfPlates.add(new Plate(3, "Cuchuco de Trigo con Espinazo", Math.random(),  TypePlate.PLATE));
+		// ================================ Platos ==========================
 	}
 
 	private void startSimulation() {
