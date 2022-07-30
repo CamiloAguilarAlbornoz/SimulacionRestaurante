@@ -97,7 +97,13 @@ public class Restaurant {
 		listOfPlates.add(new Plate(1, "Paella a la Valenciana", Math.random(),  TypePlate.PLATE));
 		listOfPlates.add(new Plate(2, "Arroz con Pollo", Math.random(),  TypePlate.PLATE));
 		listOfPlates.add(new Plate(3, "Cuchuco de Trigo con Espinazo", Math.random(),  TypePlate.PLATE));
-		// ================================ Platos ==========================
+		// ================================ Postres ==========================
+		listOfPlates.add(new Plate(4, "Creep de Brownie", Math.random(), TypePlate.DESSERT));
+		listOfPlates.add(new Plate(5, "Waffle Norbac", Math.random(), TypePlate.DESSERT));
+		listOfPlates.add(new Plate(6, "Waffle Imshe", Math.random(), TypePlate.DESSERT));
+		listOfPlates.add(new Plate(7, "Waffle cach", Math.random(), TypePlate.DESSERT));
+		// ================================ Postres ==========================
+		
 	}
 
 	private void startSimulation() {
