@@ -34,6 +34,7 @@ public class Restaurant {
 	private void generateReport() {
 		System.out.println("\n REPORTE FINAL \n" );
 		int cantOfBandeja = 0, cantOfCuchuco = 0, cantOfPaella = 0, cantOfArroz = 0;
+		int cantOfCreepOfBrownie = 0, cantWaffleNorbac = 0, cantWaffleImshe = 0, cantWaffleCach = 0;  
 		double totalRatingBandeja = 0, totalRatingCuchuco = 0, totalRatingPaella = 0, totalRatingArroz = 0;
 		for (Calification calification : califications) {
 			try {
@@ -102,8 +103,9 @@ public class Restaurant {
 		listOfPlates.add(new Plate(5, "Waffle Norbac", Math.random(), TypePlate.DESSERT));
 		listOfPlates.add(new Plate(6, "Waffle Imshe", Math.random(), TypePlate.DESSERT));
 		listOfPlates.add(new Plate(7, "Waffle cach", Math.random(), TypePlate.DESSERT));
-		// ================================ Postres ==========================
-		
+		// ================================ Entradas ==========================
+		listOfPlates.add(new Plate(8, "Fruta", Math.random(), TypePlate.PRIMARY));
+		listOfPlates.add(new Plate(9, "Sorbete", Math.random(), TypePlate.PRIMARY));
 	}
 
 	private void startSimulation() {
